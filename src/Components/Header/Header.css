@@ -1,0 +1,8 @@
+.linkText{
+    color: black !important;
+    font-weight: 500 !important;
+ }
+ .linkText:focus{
+    box-shadow:none  !important;
+ }
+ 
