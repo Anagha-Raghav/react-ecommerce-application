@@ -1,0 +1,33 @@
+/*------Image Slider-------*/
+.Slider {
+  background-color: #f8f8f8;
+  height: 430px;
+}
+.sliderImage {
+  height: 250px !important;
+  width: 250px !important;
+  margin-top: 100px !important;
+  margin-right: 250px;
+}
+
+.sliderTitle {
+  color: black;
+  font-size: 35px;
+  text-align: start;
+  display: -webkit-box;
+  line-height: 40px;
+  max-height: 100px;
+  padding: 4px 10px;
+  max-width: 400px;
+  -webkit-line-clamp: 3;
+}
+.sliderDescription {
+  color: black;
+  text-align: start;
+  display: -webkit-box;
+  line-height: 30px;
+  max-height: 100px;
+  padding: 4px 10px;
+  max-width: 650px;
+  -webkit-line-clamp: 3;
+}
