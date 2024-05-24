@@ -31,3 +31,27 @@
   max-width: 650px;
   -webkit-line-clamp: 3;
 }
+
+/*-------Service-------*/
+.service-section {
+  margin-top: 60px;
+}
+.service-section .container .card {
+  border-radius: 0px !important;
+  border: none !important;
+  height: auto !important;
+}
+.service-icon {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 15px;
+  margin: auto;
+  margin-top: 35px;
+}
+.service-section .container .card-subtitle {
+  word-spacing: 2px;
+  font-size: 15px;
+}

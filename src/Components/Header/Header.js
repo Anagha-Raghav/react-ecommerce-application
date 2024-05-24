@@ -31,7 +31,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/cart" className="linkText pe-5">
                 Cart
               </Nav.Link>
-              <Nav.Link as={Link} to="/" className="linkText">
+              <Nav.Link as={Link} to="/#" className="linkText">
                 <FaUser style={{ fontSize: "25" }} />
               </Nav.Link>
               <Nav.Link

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
-import { SliderData } from "../ProductData/ProductData";
+import { SliderData } from "../../ProductData/ProductData";
 const ImageSlider = () => {
   return (
     <div>

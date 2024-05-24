@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes,Route } from 'react-router-dom'
-import Home from '../Home/ImageSlider'
+import Home from '../Pages/Home/Home'
 const Routing = () => {
   return (
     <div>
