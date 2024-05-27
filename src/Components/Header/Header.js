@@ -11,7 +11,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   return (
     <div>
-      <Navbar expand="lg" className="shadow">
+      <Navbar expand="lg" className=" shadow ">
         <Container>
           <Navbar.Brand style={{ fontWeight: "500" }}>
             <BsBagFill
@@ -31,7 +31,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/cart" className="linkText pe-5">
                 Cart
               </Nav.Link>
-              <Nav.Link as={Link} to="/#" className="linkText">
+              <Nav.Link  className="linkText">
                 <FaUser style={{ fontSize: "25" }} />
               </Nav.Link>
               <Nav.Link

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { serviceData } from "../../ProductData/ProductData";
+import { serviceData } from "../../Products/Products";
 
 const Service = () => {
   return (
