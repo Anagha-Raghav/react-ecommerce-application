@@ -1,0 +1,18 @@
+.footer{
+    background-color: #000066;
+}
+.footer .logo{
+    display: flex;
+    color: #fff;
+}
+.footer h6{
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.footer p{
+    font-size: 14px;
+    color: #7B7D7D;
+   
+    
+}
