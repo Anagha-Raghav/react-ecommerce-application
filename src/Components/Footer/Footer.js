@@ -4,7 +4,7 @@ import { BsBagFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer ">
       <div className="container ">
         <div className="row pt-5">
           {/*-----Logo start------*/}
