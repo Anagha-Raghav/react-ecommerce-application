@@ -69,7 +69,7 @@
 }
 .discountSection .container .card {
   border: none;
-  height: auto;
+ 
 }
 .discountSection .container img {
   width: 250px;
@@ -117,10 +117,124 @@
   transition: 0.5s ease;
 }
 .discountSection .container .addIcon:hover {
-  background-color: #000066 !important;
+  background-color: #000066 ;
   color: #fff;
   border: transparent;
   font-weight: bold;
   cursor: pointer;
 }
 /*--Discount Product Section End--*/
+
+/*---New Arrival Section Start---*/
+.newArrivalSection{
+  background-color: #fff;
+}
+.newArrivalSection .container {
+  width: 900px;
+}
+.newArrivalSection .container .card {
+  border: none;
+ 
+}
+.newArrivalSection .container img{
+  width: 250px;
+  height: 200px;
+  padding: 12px;
+  margin: auto;
+  margin-top: 15px;
+
+}
+.newArrivalSection .container .card-title {
+  font-size: 15px;
+}
+.newArrivalSection .container .productRating {
+  color: #ffc300;
+  font-size: 15px;
+}
+.newArrivalSection .wishIcon {
+  position: absolute;
+  right: 8%;
+  top: 3%;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.newArrivalSection .container .card :hover .wishIcon {
+  opacity: 1;
+}
+.newArrivalSection .container .productPrice {
+  font-weight: 600;
+}
+.newArrivalSection .container .addIcon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #f8f8f8;
+  transition: 0.5s ease;
+}
+.newArrivalSection .container .addIcon:hover {
+  background-color: #000066;
+  color: #fff;
+  border: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*---New Arrival Section End----*/
+/*---Best Sales Section Start---*/
+.bestSalesSection{
+  background-color: #f8f8f8;
+}
+.bestSalesSection .container {
+width: 900px;
+
+}
+.bestSalesSection .container .card {
+  border: none;
+ 
+}
+.bestSalesSection .container img{
+  width: 250px;
+  height: 200px;
+  padding: 12px;
+  margin: auto;
+  margin-top: 15px;
+
+}
+.bestSalesSection .container .card-title {
+  font-size: 15px;
+}
+.bestSalesSection .container .productRating {
+  color: #ffc300;
+  font-size: 15px;
+}
+.bestSalesSection .wishIcon {
+  position: absolute;
+  right: 8%;
+  top: 3%;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.bestSalesSection .container .card :hover .wishIcon {
+  opacity: 1;
+}
+.bestSalesSection .container .productPrice {
+  font-weight: 600;
+}
+.bestSalesSection .container .addIcon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #f8f8f8;
+  transition: 0.5s ease;
+}
+.bestSalesSection .container .addIcon:hover {
+  background-color: #000066;
+  color: #fff;
+  border: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*---Best Sales Section End---*/
