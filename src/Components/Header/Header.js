@@ -11,7 +11,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   return (
     <div>
-      <Navbar expand="lg" className=" shadow ">
+      <Navbar expand="lg" className=" shadow fixed-top" style={{backgroundColor:'#fff'}}>
         <Container>
           <Navbar.Brand style={{ fontWeight: "500" }}>
             <BsBagFill
