@@ -6,8 +6,16 @@ import { CiHeart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import { products } from "../../Products/Products";
+import { useDispatch } from "react-redux";
+import { add } from "../../../Redux/CartSlice";
+import { toast } from "react-toastify";
 
 const Shop = () => {
+  const dispatch = useDispatch();
+  const handleAdd = (item) => {
+    dispatch(add(item));
+    toast.success("Product has been added to cart !");
+  };
   const [productsData, setProductsData] = useState(products);
   const handleFilter = (e) => {
     const filterValue = e.target.value;
@@ -95,7 +103,7 @@ const Shop = () => {
             {productsData.length === 0 ? (
               <h2 className="text-center">No products are found!</h2>
             ) : (
-              productsData.map((item,index) => (
+              productsData.map((item, index) => (
                 <div className="col-md-4 " key={index}>
                   <div className="card shadow-sm h-100 ">
                     <img src={item.imgUrl} alt={item.productName} />
@@ -124,7 +132,10 @@ const Shop = () => {
                       <div className="d-flex justify-content-between mt-2">
                         <span className="productPrice ">${item.price}</span>
                         <span>
-                          <IoAddSharp className="addIcon" />
+                          <IoAddSharp
+                            className="addIcon"
+                            onClick={() => handleAdd(item)}
+                          />
                         </span>
                       </div>
                     </div>

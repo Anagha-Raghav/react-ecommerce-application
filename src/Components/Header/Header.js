@@ -8,7 +8,9 @@ import Badge from "react-bootstrap/Badge";
 import { BsBagFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
+import {useSelector} from 'react-redux'
 const Header = () => {
+  const totalQuantity=useSelector(state=>state.cart.totalQuantity)
   return (
     <div>
       <Navbar
@@ -49,7 +51,7 @@ const Header = () => {
                   className="position-absolute top-20 start-55 translate-middle rounded-circle  "
                   style={{ fontSize: "8px" }}
                 >
-                  0
+                  {totalQuantity}
                 </Badge>
               </Nav.Link>
             </Nav>

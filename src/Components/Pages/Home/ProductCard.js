@@ -6,8 +6,16 @@ import { bestSales } from "../../Products/Products";
 import { FaStar } from "react-icons/fa";
 import { IoAddSharp } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
-
+import { useDispatch } from "react-redux";
+import { add } from "../../../Redux/CartSlice";
+import { toast } from "react-toastify";
 const ProductCard = () => {
+  const dispatch = useDispatch();
+  const handleAdd = (item) => {
+    dispatch(add(item));
+    toast.success("Product has been added to cart !");
+  };
+
   return (
     <div>
       {/*--------Discount Product Section Start--------*/}
@@ -46,7 +54,10 @@ const ProductCard = () => {
                     <div className="d-flex justify-content-between mt-2">
                       <span className="productPrice ">${item.price}</span>
                       <span>
-                        <IoAddSharp className="addIcon" />
+                        <IoAddSharp
+                          className="addIcon"
+                          onClick={() => handleAdd(item)}
+                        />
                       </span>
                     </div>
                   </div>
@@ -92,7 +103,10 @@ const ProductCard = () => {
                     <div className="d-flex justify-content-between mt-2">
                       <span className="productPrice ">${item.price}</span>
                       <span>
-                        <IoAddSharp className="addIcon" />
+                        <IoAddSharp
+                          className="addIcon"
+                          onClick={() => handleAdd(item)}
+                        />
                       </span>
                     </div>
                   </div>
@@ -138,7 +152,10 @@ const ProductCard = () => {
                     <div className="d-flex justify-content-between mt-2">
                       <span className="productPrice ">${item.price}</span>
                       <span>
-                        <IoAddSharp className="addIcon" />
+                        <IoAddSharp
+                          className="addIcon"
+                          onClick={() => handleAdd(item)}
+                        />
                       </span>
                     </div>
                   </div>
