@@ -230,7 +230,7 @@ export const discountProducts = [
 ]
 export const newArrivals = [
   {
-    id: "01",
+    id: "10",
     productName: "Apple iPhone 12 Pro",
     imgUrl: phone01,
     category: "mobile",
@@ -252,7 +252,7 @@ export const newArrivals = [
     avgRating: 4.8,
   },
   {
-    id: "02",
+    id: "11",
     productName: "Apple iPhone 12 Max",
     imgUrl: phone02,
     category: "mobile",
@@ -275,7 +275,7 @@ export const newArrivals = [
   
   },
   {
-    id: "03",
+    id: "12",
     productName: "Realme 8",
     imgUrl: phone03,
     category: "mobile",
@@ -298,7 +298,7 @@ export const newArrivals = [
   
   },
   {
-    id: "04",
+    id: "13",
     productName: "One Plus Nord",
     imgUrl: phone04,
     category: "mobile",
@@ -321,7 +321,7 @@ export const newArrivals = [
   
   },
   {
-    id: "05",
+    id: "14",
     productName: "Apple iPhone 13 Pro",
     imgUrl: phone05,
     category: "mobile",
@@ -344,7 +344,7 @@ export const newArrivals = [
   
   },
   {
-    id: "06",
+    id: "15",
     productName: "Samsung Galaxy S22",
     imgUrl: phone06,
     category: "mobile",
@@ -367,7 +367,7 @@ export const newArrivals = [
   
   },
   {
-    id: "07",
+    id: "20",
     productName: "Beat Studio Wireless",
     imgUrl: wireless01,
     category: "wireless",
@@ -389,7 +389,7 @@ export const newArrivals = [
     avgRating: 4.8,
   },
   {
-    id: "08",
+    id: "21",
     productName: "Beat EP Headphones",
     imgUrl: wireless03,
     category: "wireless",
@@ -411,7 +411,7 @@ export const newArrivals = [
     avgRating: 4.8,
   },
   {
-    id: "09",
+    id: "22",
     productName: "Black Headphones",
     imgUrl: wireless02,
     category: "wireless",
@@ -433,7 +433,7 @@ export const newArrivals = [
     avgRating: 4.8,
   },
   {
-    id: "10",
+    id: "23",
     productName: "Bluetooth Headphones",
     imgUrl: wireless04,
     category: "wireless",
@@ -519,7 +519,7 @@ export const bestSales=[
     avgRating: 4.7,
   },
   {
-    id: "04",
+    id: "26",
     productName: "Rivet Bigelow Modern ",
     imgUrl: productImg02,
     category: "sofa",
@@ -541,7 +541,7 @@ export const bestSales=[
     avgRating: 4.7,
   },
   {
-    id: "05",
+    id: "04",
     productName: "Fllufy Sheep Sofa",
     imgUrl: productImg04,
     category: "sofa",
@@ -563,7 +563,7 @@ export const bestSales=[
     avgRating: 4.7,
   },
   {
-    id: "06",
+    id: "05",
     productName: "Faux Velvet Sofa",
     imgUrl: productImg05,
     category: "sofa",
@@ -585,7 +585,7 @@ export const bestSales=[
     avgRating: 4.7,
   },
   {
-    id: "07",
+    id: "06",
     productName: "Fllufy Sheep Sofa",
     imgUrl: productImg04,
     category: "sofa",
@@ -607,7 +607,7 @@ export const bestSales=[
     avgRating: 4.7,
   },
   {
-    id: "08",
+    id: "27",
     productName: "Modern Arm Sofa",
     imgUrl: productImg007,
     category: "sofa",

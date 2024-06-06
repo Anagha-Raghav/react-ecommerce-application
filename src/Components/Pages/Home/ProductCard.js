@@ -9,6 +9,7 @@ import { CiHeart } from "react-icons/ci";
 import { useDispatch } from "react-redux";
 import { add } from "../../../Redux/CartSlice";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 const ProductCard = () => {
   const dispatch = useDispatch();
   const handleAdd = (item) => {
@@ -27,13 +28,16 @@ const ProductCard = () => {
             {discountProducts.map((item, index) => (
               <div className="col-md-4" key={index}>
                 <div className="card shadow-sm h-100">
+                  <Link to={`/singleproduct/${item.id}`}>
                   <img src={item.imgUrl} alt={item.productName} />
+                  </Link>
                   <div className="card-body">
                     <div className="productDiscount">{item.discount}% Off</div>
                     <span className="wishIcon">
                       <CiHeart />
                     </span>
                     <h5 className="card-title">{item.productName}</h5>
+                    
                     <div className="productRating">
                       <span>
                         <FaStar />
@@ -60,6 +64,7 @@ const ProductCard = () => {
                         />
                       </span>
                     </div>
+                  
                   </div>
                 </div>
               </div>
@@ -77,7 +82,9 @@ const ProductCard = () => {
             {newArrivals.map((item, index) => (
               <div className="col-md-4 " key={index}>
                 <div className="card shadow-sm h-100 ">
+                  <Link to={`/singleproduct/${item.id}`}>
                   <img src={item.imgUrl} alt={item.productName} />
+                  </Link>
                   <div className="card-body">
                     <span className="wishIcon">
                       <CiHeart />
@@ -126,7 +133,9 @@ const ProductCard = () => {
             {bestSales.map((item, index) => (
               <div className=" col-md-4 " key={index}>
                 <div className="card shadow-sm h-100 ">
+                  <Link to={`/singleproduct/${item.id}`}>
                   <img src={item.imgUrl} alt={item.productName} />
+                  </Link>
                   <div className="card-body">
                     <span className="wishIcon">
                       <CiHeart />

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Shop.css";
+import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { IoAddSharp } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
@@ -99,14 +100,16 @@ const Shop = () => {
       </section>
       <section className="productListSection">
         <div className="container">
-          <div className="row g-3 justify-content-md-center">
+          <div className="row  g-3 justify-content-md-center">
             {productsData.length === 0 ? (
               <h2 className="text-center">No products are found!</h2>
             ) : (
               productsData.map((item, index) => (
                 <div className="col-md-4 " key={index}>
                   <div className="card shadow-sm h-100 ">
+                  <Link to={`/singleproduct/${item.id}`}>
                     <img src={item.imgUrl} alt={item.productName} />
+                    </Link>
                     <div className="card-body">
                       <span className="wishIcon">
                         <CiHeart />

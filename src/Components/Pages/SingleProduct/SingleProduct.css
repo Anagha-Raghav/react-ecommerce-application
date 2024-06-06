@@ -1,0 +1,97 @@
+.productDetails {
+  height: 500px;
+}
+.productDetails .container img {
+  width: 500px;
+  height: 400px;
+}
+.productDetails .container .productRating {
+  color: #ffc300;
+  font-size: 15px;
+}
+.productDetails .container .productRating span {
+  padding-right: 4px;
+}
+.productDetails .container .shortDescription {
+  font-size: 14px;
+}
+.productDetails .container input {
+  width: 80px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.productDetails .container button {
+  padding: 8px 15px 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000066;
+  color: #fff;
+  font-size: 14px;
+}
+.tab h6 {
+  cursor: pointer;
+}
+.tabContent p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.activeTab {
+  color: #000;
+  font-weight: bold;
+}
+.reviewSection .productReview span {
+  color: red;
+}
+.related_products .container {
+  width: 900px;
+}
+.related_products .container .card {
+  border: none;
+}
+.related_products h4 {
+  margin-left: 10%;
+}
+.related_products .container img {
+  width: 250px;
+  height: 200px;
+  padding: 12px;
+  margin: auto;
+  margin-top: 15px;
+}
+.related_products .container .card-title {
+  font-size: 15px;
+}
+.related_products .container .productRating {
+  color: #ffc300;
+  font-size: 15px;
+}
+.related_products .wishIcon {
+  position: absolute;
+  right: 8%;
+  top: 3%;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.related_products .container .card :hover .wishIcon {
+  opacity: 1;
+}
+.related_products .container .productPrice {
+  font-weight: 600;
+}
+.related_products .container .addIcon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #f8f8f8;
+  transition: 0.5s ease;
+}
+.related_products .container .addIcon:hover {
+  background-color: #000066;
+  color: #fff;
+  border: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
