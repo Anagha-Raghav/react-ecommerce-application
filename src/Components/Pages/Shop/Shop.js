@@ -18,6 +18,9 @@ const Shop = () => {
     toast.success("Product has been added to cart !");
   };
   const [productsData, setProductsData] = useState(products);
+ 
+  
+ 
   const handleFilter = (e) => {
     const filterValue = e.target.value;
     console.log(e.target.value);

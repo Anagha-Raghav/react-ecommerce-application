@@ -29,7 +29,7 @@ const ProductCard = () => {
               <div className="col-md-4" key={index}>
                 <div className="card shadow-sm h-100">
                   <Link to={`/singleproduct/${item.id}`}>
-                  <img src={item.imgUrl} alt={item.productName} />
+                  <img src={item.imgUrl} alt={item.productName}/>
                   </Link>
                   <div className="card-body">
                     <div className="productDiscount">{item.discount}% Off</div>
