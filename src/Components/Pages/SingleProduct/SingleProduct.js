@@ -1,19 +1,22 @@
 import React from "react";
 import "./SingleProduct.css";
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { add } from "../../../Redux/CartSlice";
+import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
 import { products } from "../../Products/Products";
-import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
 import { IoAddSharp } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 
 const SingleProduct = () => {
-
   const [tab, setTab] = useState("tabDescription");
+  const dispatch = useDispatch();
   const { id } = useParams();
   const singleProduct = products.find((item) => item.id === id);
-  
+
   const {
     imgUrl,
     productName,
@@ -30,6 +33,18 @@ const SingleProduct = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, [singleProduct]);
+
+  const addToCart = (item) => {
+    dispatch(
+      add({
+        id,
+        imgUrl,
+        productName,
+        price,
+      })
+    );
+    toast.success("Product has been added to cart !");
+  };
   return (
     <div>
       <div className="commonSection">
@@ -72,9 +87,16 @@ const SingleProduct = () => {
                 <p>category: {category}</p>
               </div>
               <p className="mt-3 shortDescription">{shortDesc}</p>
-              <input type="number" className="mt-4" />
+              <input
+                type="number"
+                min={1}
+                className="mt-4"
+                style={{ textAlign: "center" }}
+              />
               <div>
-                <button className=" mt-3">Add To Cart</button>
+                <button className=" mt-3" onClick={() => addToCart()}>
+                  Add To Cart
+                </button>
               </div>
             </div>
           </div>
