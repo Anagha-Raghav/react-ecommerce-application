@@ -32,7 +32,7 @@ const Cart = () => {
         <div className="cart_items  col-md-6">
           {cartItems && cartItems.length > 0 ? (
             cartItems.map((item) => (
-              <div class="card pb-3 mt-2">
+              <div class="card pb-3 mt-2 shadow-sm">
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
@@ -88,28 +88,29 @@ const Cart = () => {
               </div>
             ))
           ) : (
-            <h2>No products found</h2>
+            <div class="card w-100 mt-3 pb-5 shadow-sm">
+              <div class="card-body">
+                <p class="card-text fw-semibold">No Items are add in cart</p>
+              </div>
+            </div>
           )}
         </div>
         {/*----Cart Summary Start---*/}
         <div className="cart-summary col-md-6 mt-2  ">
-          {cartItems && cartItems.length > 0 ? (
-            <div className="cart-summary-box  w-50 ">
-              <h6 className="p-3 ">Cart Summary</h6>
-              <div>
-                <p className="px-3">Total Price:</p>
-                <span
-                  className="ps-3 fw-semibold fs-5"
-                  style={{ color: "#000066" }}
-                >
-                  ${cartTotal}{" "}
-                </span>
-              </div>
+          <div className="cart-summary-box  w-50 shadow-sm">
+            <h6 className="p-3 ">Cart Summary</h6>
+            <div>
+              <p className="px-3">Total Price:</p>
+              <span
+                className="ps-3 fw-semibold fs-5"
+                style={{ color: "#000066" }}
+              >
+                ${cartTotal}{" "}
+              </span>
             </div>
-          ) : (
-            ""
-          )}
+          </div>
         </div>
+
         {/*----Cart Summary End---*/}
       </section>
     </div>

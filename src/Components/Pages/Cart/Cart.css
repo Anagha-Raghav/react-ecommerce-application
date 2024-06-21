@@ -1,7 +1,7 @@
 .cartSection {
   background-color: #f8f8f8;
 }
-.cartSection .container{
+.cartSection .container {
   height: auto;
 }
 
@@ -16,6 +16,9 @@
   display: flex;
   justify-content: space-between;
 }
+.cartSection .container .cart_items p {
+  color: #000066;
+}
 .cart-summary-box {
   background-color: #fff;
   border-radius: 5px;
@@ -29,6 +32,7 @@
 .cart-remove {
   font-weight: bold;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .cartBtn button {
