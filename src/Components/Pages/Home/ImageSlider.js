@@ -18,6 +18,9 @@ const ImageSlider = () => {
                 <h3 className="sliderTitle">{item.title}</h3>
                 <p className="sliderDescription">{item.desc}</p>
               </Carousel.Caption>
+              <button className="sliderBtn shadow-sm ">
+                Visit Collections
+              </button>
             </Carousel.Item>
           ))}
         </Carousel>
