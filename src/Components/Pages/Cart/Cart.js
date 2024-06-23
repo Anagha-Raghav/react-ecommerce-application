@@ -29,6 +29,9 @@ const Cart = () => {
   return (
     <div className=" cartSection  ">
       <section className="container pb-5  pt-5 gap-4">
+
+        {/*------Cart Items Start------*/}
+
         <div className="cart_items  col-md-6">
           {cartItems && cartItems.length > 0 ? (
             cartItems.map((item) => (
@@ -58,9 +61,11 @@ const Cart = () => {
                         <span className="text-muted">
                           ${item.price} * {item.quantity}
                         </span>
-                        <span className="fw-semibold">
-                          {" "}
-                          ${item.price * item.quantity}
+                        <span
+                          className="fw-semibold"
+                          style={{ color: "#000066" }}
+                        >
+                          ${(item.price * item.quantity).toFixed(2)}
                         </span>
 
                         <div className="cartBtn">
@@ -95,6 +100,9 @@ const Cart = () => {
             </div>
           )}
         </div>
+
+        {/*------Cart Items End------*/}
+
         {/*----Cart Summary Start---*/}
         <div className="cart-summary col-md-6 mt-2  ">
           <div className="cart-summary-box  w-50 shadow-sm">
@@ -105,7 +113,7 @@ const Cart = () => {
                 className="ps-3 fw-semibold fs-5"
                 style={{ color: "#000066" }}
               >
-                ${cartTotal}{" "}
+                ${cartTotal.toFixed(2)}
               </span>
             </div>
           </div>

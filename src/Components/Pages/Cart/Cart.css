@@ -1,9 +1,6 @@
 .cartSection {
   background-color: #f8f8f8;
 }
-.cartSection .container {
-  height: auto;
-}
 
 .cartSection .container .cart_items .card {
   border: none;
