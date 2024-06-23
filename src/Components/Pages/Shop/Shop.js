@@ -74,7 +74,7 @@ const Shop = () => {
       <section className="filterSection">
         <div className="container">
           <div className="row mt-5 pb-5">
-            <div className="col-md-4">
+            <div className="col-md-4 ">
               <select className="select" onChange={handleFilter}>
                 <option disabled selected hidden>
                   Filter By Category

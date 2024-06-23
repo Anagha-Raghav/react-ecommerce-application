@@ -14,22 +14,16 @@
   color: black;
   font-size: 35px;
   text-align: start;
-  display: -webkit-box;
   line-height: 40px;
-  max-height: 100px;
   padding: 4px 10px;
   max-width: 400px;
-  -webkit-line-clamp: 3;
 }
 .sliderDescription {
   color: black;
   text-align: start;
-  display: -webkit-box;
   line-height: 30px;
-  max-height: 100px;
   padding: 4px 10px;
   max-width: 650px;
-  -webkit-line-clamp: 3;
 }
 /*------Image Slider End-------*/
 
@@ -69,7 +63,6 @@
 }
 .discountSection .container .card {
   border: none;
- 
 }
 .discountSection .container img {
   width: 250px;
@@ -117,7 +110,7 @@
   transition: 0.5s ease;
 }
 .discountSection .container .addIcon:hover {
-  background-color: #000066 ;
+  background-color: #000066;
   color: #fff;
   border: transparent;
   font-weight: bold;
@@ -126,7 +119,7 @@
 /*--Discount Product Section End--*/
 
 /*---New Arrival Section Start---*/
-.newArrivalSection{
+.newArrivalSection {
   background-color: #fff;
 }
 .newArrivalSection .container {
@@ -134,15 +127,13 @@
 }
 .newArrivalSection .container .card {
   border: none;
- 
 }
-.newArrivalSection .container img{
+.newArrivalSection .container img {
   width: 250px;
   height: 200px;
   padding: 12px;
   margin: auto;
   margin-top: 15px;
-
 }
 .newArrivalSection .container .card-title {
   font-size: 15px;
@@ -182,24 +173,21 @@
 }
 /*---New Arrival Section End----*/
 /*---Best Sales Section Start---*/
-.bestSalesSection{
+.bestSalesSection {
   background-color: #f8f8f8;
 }
 .bestSalesSection .container {
-width: 900px;
-
+  width: 900px;
 }
 .bestSalesSection .container .card {
   border: none;
- 
 }
-.bestSalesSection .container img{
+.bestSalesSection .container img {
   width: 250px;
   height: 200px;
   padding: 12px;
   margin: auto;
   margin-top: 15px;
-
 }
 .bestSalesSection .container .card-title {
   font-size: 15px;
