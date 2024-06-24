@@ -29,7 +29,6 @@ const Cart = () => {
   return (
     <div className=" cartSection  ">
       <section className="container pb-5  pt-5 gap-4">
-
         {/*------Cart Items Start------*/}
 
         <div className="cart_items  col-md-6">
@@ -104,7 +103,7 @@ const Cart = () => {
         {/*------Cart Items End------*/}
 
         {/*----Cart Summary Start---*/}
-        <div className="cart-summary col-md-6 mt-2  ">
+        <div className="cart-summary col-md-6 mt-2  pb-3">
           <div className="cart-summary-box  w-50 shadow-sm">
             <h6 className="p-3 ">Cart Summary</h6>
             <div>
