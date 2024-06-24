@@ -18,9 +18,7 @@ const Shop = () => {
     toast.success("Product has been added to cart !");
   };
   const [productsData, setProductsData] = useState(products);
- 
-  
- 
+
   const handleFilter = (e) => {
     const filterValue = e.target.value;
     console.log(e.target.value);
@@ -73,8 +71,8 @@ const Shop = () => {
       </div>
       <section className="filterSection">
         <div className="container">
-          <div className="row mt-5 pb-5">
-            <div className="col-md-4 ">
+          <div className="row mt-5 pb-5 ">
+            <div className="col-md-4 selectBox">
               <select className="select" onChange={handleFilter}>
                 <option disabled selected hidden>
                   Filter By Category
@@ -101,17 +99,17 @@ const Shop = () => {
           </div>
         </div>
       </section>
-      <section className="productListSection">
+      <section className="productListSection pb-5">
         <div className="container">
           <div className="row  g-3 justify-content-md-center">
             {productsData.length === 0 ? (
-              <h2 className="text-center">No products are found!</h2>
+              <h2 className="text-center pb-5">No products are found!</h2>
             ) : (
               productsData.map((item, index) => (
                 <div className="col-md-4 " key={index}>
                   <div className="card shadow-sm h-100 ">
-                  <Link to={`/singleproduct/${item.id}`}>
-                    <img src={item.imgUrl} alt={item.productName} />
+                    <Link to={`/singleproduct/${item.id}`}>
+                      <img src={item.imgUrl} alt={item.productName} />
                     </Link>
                     <div className="card-body">
                       <span className="wishIcon">

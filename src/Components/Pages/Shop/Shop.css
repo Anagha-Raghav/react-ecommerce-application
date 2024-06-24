@@ -101,3 +101,65 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .commonSection {
+    height: 150px;
+  }
+  .select {
+    width: 200px;
+    padding: 3px;
+  }
+  .searchBox input {
+    padding: 2px;
+  }
+  .productListSection .container img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+  }
+  .productListSection .container {
+    width: 650px;
+  }
+  .productListSection .container .card-title {
+    font-size: 12px;
+  }
+  .productListSection .container .productRating {
+    font-size: 12px;
+  }
+  .productListSection .container .productPrice {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .filterSection {
+    width: 900px;
+  }
+  .filterSection .container {
+    width: 650px;
+  }
+  .select {
+    width: 200px;
+  }
+  .searchBox input {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 50%;
+  }
+  .commonSection {
+    width: 900px;
+    height: 150px;
+  }
+  .productListSection .container img {
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+  }
+  .productListSection .container .card {
+    width: 500px;
+    margin: auto;
+  }
+  .productListSection {
+    width: 900px;
+  }
+}
