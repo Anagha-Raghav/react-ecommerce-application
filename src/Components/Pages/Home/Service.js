@@ -8,7 +8,7 @@ const Service = () => {
       <div className="container ">
         <div className="row">
           {serviceData.map((item) => (
-            <div className="col-md-3 gx-2 ">
+            <div className="col-md-3  gx-2 ">
               <div
                 className="card text-center "
                 style={{ backgroundColor: `${item.bg}` }}

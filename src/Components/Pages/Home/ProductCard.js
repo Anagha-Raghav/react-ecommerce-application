@@ -29,7 +29,7 @@ const ProductCard = () => {
               <div className="col-md-4" key={index}>
                 <div className="card shadow-sm h-100">
                   <Link to={`/singleproduct/${item.id}`}>
-                  <img src={item.imgUrl} alt={item.productName}/>
+                    <img src={item.imgUrl} alt={item.productName} />
                   </Link>
                   <div className="card-body">
                     <div className="productDiscount">{item.discount}% Off</div>
@@ -37,7 +37,7 @@ const ProductCard = () => {
                       <CiHeart />
                     </span>
                     <h5 className="card-title">{item.productName}</h5>
-                    
+
                     <div className="productRating">
                       <span>
                         <FaStar />
@@ -64,7 +64,6 @@ const ProductCard = () => {
                         />
                       </span>
                     </div>
-                  
                   </div>
                 </div>
               </div>
@@ -83,7 +82,7 @@ const ProductCard = () => {
               <div className="col-md-4 " key={index}>
                 <div className="card shadow-sm h-100 ">
                   <Link to={`/singleproduct/${item.id}`}>
-                  <img src={item.imgUrl} alt={item.productName} />
+                    <img src={item.imgUrl} alt={item.productName} />
                   </Link>
                   <div className="card-body">
                     <span className="wishIcon">
@@ -134,7 +133,7 @@ const ProductCard = () => {
               <div className=" col-md-4 " key={index}>
                 <div className="card shadow-sm h-100 ">
                   <Link to={`/singleproduct/${item.id}`}>
-                  <img src={item.imgUrl} alt={item.productName} />
+                    <img src={item.imgUrl} alt={item.productName} />
                   </Link>
                   <div className="card-body">
                     <span className="wishIcon">

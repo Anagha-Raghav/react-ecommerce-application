@@ -14,7 +14,10 @@ const ImageSlider = () => {
                 src={item.cover}
                 alt={item.title}
               />
-              <Carousel.Caption style={{ top: "40%", left: "10%" }}>
+              <Carousel.Caption
+                className="sliderCaption"
+                style={{ top: "40%", left: "10%" }}
+              >
                 <h3 className="sliderTitle">{item.title}</h3>
                 <p className="sliderDescription">{item.desc}</p>
               </Carousel.Caption>

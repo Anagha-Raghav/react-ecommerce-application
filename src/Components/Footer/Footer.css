@@ -1,20 +1,32 @@
-.footer{
-    background-color: #000066;
-  
-    
+.footer {
+  background-color: #000066;
 }
-.footer .logo{
-    display: flex;
-    color: #fff;
+.footer .logo {
+  display: flex;
+  color: #fff;
 }
-.footer h6{
-    color: #fff;
-    padding-bottom: 10px;
-    font-weight: 400;
+.footer h6 {
+  color: #fff;
+  padding-bottom: 10px;
+  font-weight: 400;
 }
-.footer p{
-    font-size: 14px;
-    color: #7B7D7D;
-   
-    
+.footer p {
+  font-size: 14px;
+  color: #7b7d7d;
+}
+@media screen and (max-width: 768px) {
+  .footer p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    width: 900px;
+  }
+  .footer .container {
+    width: 650px;
+  }
+  .footer p {
+    font-size: 15px;
+  }
 }

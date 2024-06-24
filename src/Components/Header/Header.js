@@ -8,9 +8,9 @@ import Badge from "react-bootstrap/Badge";
 import { BsBagFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
-import {useSelector} from 'react-redux'
+import { useSelector } from "react-redux";
 const Header = () => {
-  const totalQuantity=useSelector(state=>state.cart.totalQuantity)
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   return (
     <div>
       <Navbar
@@ -43,7 +43,7 @@ const Header = () => {
               <Nav.Link
                 as={Link}
                 to="/cart"
-                className="linkText position-relative"
+                className="linkText position-relative "
               >
                 <FaShoppingCart style={{ fontSize: "25" }} />
                 <Badge
