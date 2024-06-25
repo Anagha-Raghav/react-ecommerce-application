@@ -36,7 +36,7 @@ const Cart = () => {
             cartItems.map((item) => (
               <div class="card pb-3 mt-2 shadow-sm">
                 <div class="row g-0">
-                  <div class="col-md-3">
+                  <div class="col-md-3 ">
                     <img
                       src={item.imgUrl}
                       class="img-fluid rounded-start"
@@ -57,11 +57,11 @@ const Cart = () => {
                         </span>
                       </div>
                       <div className="d-flex justify-content-between mt-5">
-                        <span className="text-muted">
+                        <span className="text-muted cart-price">
                           ${item.price} * {item.quantity}
                         </span>
                         <span
-                          className="fw-semibold"
+                          className="fw-semibold cart-price"
                           style={{ color: "#000066" }}
                         >
                           ${(item.price * item.quantity).toFixed(2)}
@@ -104,7 +104,7 @@ const Cart = () => {
 
         {/*----Cart Summary Start---*/}
         <div className="cart-summary col-md-6 mt-2  pb-3">
-          <div className="cart-summary-box  w-50 shadow-sm">
+          <div className="cart-summary-box  shadow-sm">
             <h6 className="p-3 ">Cart Summary</h6>
             <div>
               <p className="px-3">Total Price:</p>
