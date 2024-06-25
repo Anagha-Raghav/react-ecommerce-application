@@ -113,21 +113,17 @@
   .searchBox input {
     padding: 2px;
   }
+  .productListSection .container {
+    width: 650px;
+  }
   .productListSection .container img {
     width: 200px;
     height: 200px;
     margin-top: 5px;
   }
-  .productListSection .container {
-    width: 650px;
-  }
-  .productListSection .container .card-title {
-    font-size: 12px;
-  }
-  .productListSection .container .productRating {
-    font-size: 12px;
-  }
-  .productListSection .container .productPrice {
+  .productListSection .container .card-title,
+  .productRating,
+  .productPrice {
     font-size: 12px;
   }
 }
@@ -150,6 +146,9 @@
     width: 900px;
     height: 150px;
   }
+  .productListSection {
+    width: 900px;
+  }
   .productListSection .container img {
     width: 400px;
     height: 300px;
@@ -159,7 +158,10 @@
     width: 500px;
     margin: auto;
   }
-  .productListSection {
-    width: 900px;
+  .productListSection .container .card-title,
+  .productRating,
+  .productPrice {
+    font-size: 15px;
+    padding: 5px;
   }
 }
