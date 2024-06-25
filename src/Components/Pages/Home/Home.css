@@ -200,8 +200,16 @@
   .discountSection .container {
     width: 650px;
   }
+  .discountSection .container .card-title,
+  .productRating,
+  .productPrice {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 320px) {
+  .discountSection {
+    width: 900px;
+  }
   .discountSection .container img {
     width: 400px;
     height: 300px;
@@ -211,8 +219,11 @@
     width: 500px;
     margin: auto;
   }
-  .discountSection {
-    width: 900px;
+  .discountSection .container .card-title,
+  .productRating,
+  .productPrice {
+    font-size: 15px;
+    padding: 5px;
   }
 }
 /*--Discount Product Section End--*/
@@ -278,8 +289,16 @@
   .newArrivalSection .container {
     width: 650px;
   }
+  .newArrivalSection .container .card-title,
+  .productRating,
+  .productPrice {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 320px) {
+  .newArrivalSection {
+    width: 900px;
+  }
   .newArrivalSection .container img {
     width: 400px;
     height: 300px;
@@ -289,8 +308,11 @@
     width: 500px;
     margin: auto;
   }
-  .newArrivalSection {
-    width: 900px;
+  .newArrivalSection .container .card-title,
+  .productRating,
+  .productPrice {
+    font-size: 15px;
+    padding: 5px;
   }
 }
 /*---New Arrival Section End----*/
@@ -356,8 +378,16 @@
   .bestSalesSection .container {
     width: 650px;
   }
+  .bestSalesSection .container .card-title,
+  .productRating,
+  .productPrice {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 320px) {
+  .bestSalesSection {
+    width: 900px;
+  }
   .bestSalesSection .container img {
     width: 400px;
     height: 300px;
@@ -367,8 +397,11 @@
     width: 500px;
     margin: auto;
   }
-  .bestSalesSection {
-    width: 900px;
+  .bestSalesSection .container .card-title,
+  .productRating,
+  .productPrice {
+    font-size: 15px;
+    padding: 5px;
   }
 }
 /*---Best Sales Section End---*/
