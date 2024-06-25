@@ -61,8 +61,8 @@ const SingleProduct = () => {
               <img src={imgUrl} alt={productName} />
             </div>
             <div className="col-md-6 mt-5">
-              <h4>{productName}</h4>
-              <div className="d-flex gap-4 mt-4">
+              <h4 className="product-name">{productName}</h4>
+              <div className="d-flex gap-4 mt-4 product-rating">
                 <div className="productRating">
                   <span>
                     <FaStar />
@@ -82,7 +82,7 @@ const SingleProduct = () => {
                 </div>
                 <p>{avgRating} ratings</p>
               </div>
-              <div className="d-flex gap-5 mt-2">
+              <div className="d-flex gap-5 mt-2 price-category">
                 <span className="fw-bold fs-5">${price}</span>
                 <p>category: {category}</p>
               </div>
@@ -106,7 +106,7 @@ const SingleProduct = () => {
 
       {/*----Product Description & Review Start---*/}
 
-      <section className="mt-4 pb-5">
+      <section className="mt-4 pb-5 review-description">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

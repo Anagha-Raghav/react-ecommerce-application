@@ -28,7 +28,7 @@
   color: #fff;
   font-size: 14px;
 }
-.productDetails .container button:focus{
+.productDetails .container button:focus {
   outline: none;
 }
 .tab h6 {
@@ -97,4 +97,95 @@
   border: transparent;
   font-weight: bold;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .productDetails .container img {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .related_products .container img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+  }
+  .related_products .container {
+    width: 650px;
+  }
+  .related_products .container .card-title {
+    font-size: 12px;
+  }
+  .related_products .container .productRating {
+    font-size: 12px;
+  }
+  .related_products .container .productPrice {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .productDetails {
+    width: 900px;
+    height: auto;
+  }
+  .productDetails .container img {
+    width: 500px;
+    height: 400px;
+    margin-left: 20%;
+    margin-top: 2px;
+  }
+  .productDetails .container .product-name {
+    text-align: center;
+  }
+  .productDetails .container .product-rating {
+    justify-content: center;
+  }
+  .productDetails .container .price-category {
+    justify-content: center;
+  }
+  .productDetails .container .shortDescription {
+    width: 350px;
+    margin-left: 32%;
+  }
+  .productDetails .container input {
+    margin-left: 46%;
+  }
+  .productDetails .container button {
+    margin-left: 45%;
+  }
+  .review-description {
+    width: 900px;
+    padding-top: 30px;
+  }
+  .tab {
+    justify-content: center;
+  }
+  .review-description {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .review-description .container .reviewSection {
+    padding-left: 45%;
+  }
+  .related_products {
+    width: 900px;
+  }
+  .related_products h4 {
+    text-align: center;
+  }
+  .related_products .container {
+    width: 600px;
+  }
+  .related_products .container img {
+    width: 400px;
+    height: 300px;
+    margin-left: 15%;
+  }
+  .related_products .container .card-title {
+    font-size: 20px;
+  }
+  .related_products .container .card-title,
+  .productRating,
+  .productPrice {
+    padding: 5px;
+  }
 }
